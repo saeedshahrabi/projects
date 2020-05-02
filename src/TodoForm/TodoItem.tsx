@@ -5,6 +5,7 @@ interface IProps {
   namess: any;
   toggleTodo: any;
   handleRemove: ()=>void;
+  
 }
 export class TodoItem extends React.Component<IProps> {
   render() {
