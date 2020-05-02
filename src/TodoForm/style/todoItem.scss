@@ -1,0 +1,133 @@
+@import "~bootstrap/scss/bootstrap";
+@import "mixin";
+@import "~font-awesome/scss/font-awesome";
+$gray: #848484;
+$green: #47ab47;
+$goldColor: #ab915c;
+$border: none;
+$none: none;
+$ff: verdana;
+$black: #2a2a2a;
+$rel: relative;
+$abs: absolute;
+$grays: #323232;
+$height: 100vh;
+$br: 5px;
+$box-shadow: 0px 0px 2px #616161;
+$cursor: pointer;
+$decoration: line-through;
+$solid: 1px solid;
+$font-size: 15px;
+$transition: all ease .5s;
+.ul_todo{
+  margin: 0;
+  padding: 0;
+  list-style: $none;
+  li{
+    margin: {
+      bottom: 10px;
+    }
+  }
+}
+.todo-item {
+  color: $gray !important;
+
+  padding: {
+    left: 21px;
+  }
+  cursor: $cursor;
+}
+.todo-done {
+  text-decoration: $decoration;
+  color: $green !important;
+}
+.title {
+  color: $goldColor;
+  font-family: $ff;
+  margin: 52px 0;
+}
+
+.input-group.inputs_name {
+  input {
+    border: $border;
+    background: transparent;
+    border-bottom: $solid;
+    color: $goldColor;
+    border-radius: 0;
+    padding-bottom: 11px;
+    outline: $none;
+    margin-bottom: 30px;
+    &:focus {
+      outline: $none;
+      box-shadow: $none;
+    }
+  }
+}
+p.todo-item {
+  color: #848484;
+}
+button#btns {
+  background: transparent;
+  border: $border;
+  color: $goldColor;
+  border-radius: 0;
+  transform: rotate(45deg);
+  position: relative;
+  left: -24px;
+  outline: $none;
+  z-index: 5;
+  bottom: 12px;
+  &:focus {
+    box-shadow: $none;
+  }
+}
+
+
+body {
+  @include background("./../../img/02.jpg");
+  height: $height;
+}
+.row1 {
+  @include background("./../../img/01.jpg", repeat-y, unset, unset);
+  background-color: $black;
+  border-radius: $br;
+  box-shadow: $box-shadow;
+}
+.heights {
+  min-height: 500px;
+}
+.row1 {
+  .col-md-8 {
+    background-color: $grays;
+  }
+}
+i.fa.fa-times.text-danger {
+  float: right;
+  margin-right: 41px;
+  font-size: 19px;
+  cursor: pointer;
+  &:hover{
+    color:#f52323 !important;
+  }
+}
+button.deleteall {
+  background: #ff1212;
+  border: $none;
+  padding: 5px 20px;
+  border-radius: $br;
+  margin-bottom: 16px;
+  outline: $none;
+  transition: $transition;
+  margin: {
+    left: 16px;
+  };
+  &:hover{
+    background: #e02b2b;
+    color: #fff;
+  }
+}
+i.fa.fa-check,i.fa.fa-circle-o {
+  position: relative;
+  left: -6px;
+  top: 2px;
+}

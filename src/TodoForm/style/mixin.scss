@@ -1,0 +1,6 @@
+@mixin background($url,$reapet:no-repeat,$size:cover,$attachment:fixed) {
+    background-image: url($url);
+    background-repeat: $reapet;
+    background-size: $size;
+    background-attachment: $attachment;
+}
