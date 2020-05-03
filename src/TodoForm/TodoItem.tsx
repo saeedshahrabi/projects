@@ -15,6 +15,10 @@ export class TodoItem extends React.Component<IProps> {
           className={this.props.toggle ? "todo-item todo-done" : "todo-item"}
           onClick={this.props.toggleTodo}
         >
+
+
+
+          
           <i className={this.props.toggle ? "fa fa-check" :  "fa fa-circle-o"}></i>
           
           {this.props.namess}
