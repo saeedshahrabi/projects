@@ -5,6 +5,7 @@ interface IProps {
   namess: any;
   toggleTodo: any;
   handleRemove: ()=>void;
+  
 }
 export class TodoItem extends React.Component<IProps> {
   render() {
@@ -14,9 +15,12 @@ export class TodoItem extends React.Component<IProps> {
           className={this.props.toggle ? "todo-item todo-done" : "todo-item"}
           onClick={this.props.toggleTodo}
         >
+
+
+
+          
           <i className={this.props.toggle ? "fa fa-check" :  "fa fa-circle-o"}></i>
-          {/* <i className="fa fa-circle-o"></i>
-          <i className="fa fa-check"></i> */}
+          
           {this.props.namess}
         </a>
     
