@@ -15,7 +15,7 @@ export default class Header extends React.Component<IProps, IState> {
   state = {
     list: "",
   };
-  //handeling input value (saeed)
+  //handeling input value (saeed shahrabi) 
   inputHandler = (e: any): void => {
     // return true;
     this.setState({
